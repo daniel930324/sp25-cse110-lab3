@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Minutes</title>
+        <link rel="icon" href="assets/images/Favicon.png">
+
+    </head>
+    <body>
+        <header>
+            <div>Notes Section</div>
+
+            <nav>
+                <ol>
+                    <li><a href="#title">Title</a></li>
+                    <li><a href="#topic">Topic</a></li>
+                    <li><a href="#date">Date</a></li>
+                    <li><a href="#attendence">Attendence</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#unfinished">Unfinished</a></li>
+                    <li><a href="#newbusiness">New Business</a></li>
+                    <li><a href="#questions">Questions</a></li>
+                    <li><a href="#recording">Recording</a></li>
+                    <li><a href="#form">Feedback</a></li>
+                </ol>
+            </nav>
+        </header>
+
+        <main>
+            <h1 id="title">CSE110 SP25 Group 3 Meeting</h1>
+
+            <h2 id="topic">Topic: </h2>
+            <input type="text">
+
+            <h3 id="date">Date: </h3> 
+            <input type="date">
+
+            <h2 id="attendence">Attendence:</h2>
+            <ul>
+                <li><input type="checkbox"> Huei-Guo</li>
+                <li><input type="checkbox"> Aaron</li>
+                <li><input type="checkbox"> Yangyang</li>
+                <li><input type="checkbox"> Cilin</li>
+                <li><input type="checkbox"> Sree</li>
+                <li><input type="checkbox"> Natalie</li>
+                <li><input type="checkbox"> Kelsie</li>
+                <li><input type="checkbox"> Jon</li>
+                <li><input type="checkbox"> Danny</li>
+            </ul>
+
+            <h2 id="agenda">Agenda: </h2>
+            <p>Keep planning on the workflow for the project, decide how to divide the work, and questions and concerns overall</p>
+            <ul>
+                <li><input type="checkbox"> Finish planning the workflow for the project</li>
+                <li><input type="checkbox"> Decide how to divide the work</li>
+                <li><input type="checkbox"> Questions and Concerns</li>
+            </ul>
+
+            <h2 id="unfinished">Unfinished Business:</h2>
+            <p><strong>From previous meeting:</strong> <em>UI Design</em> are still pending.<br>Structure a more detailed rules of the game.</p>
+
+            <h2 id="newbusiness">New Business:</h2>
+            <ol>
+                <li>Decide on how to split the work</li>
+                <li>Decide on the general work group style --- do we want to split work or form smaller groups</li>
+                <li>The way to do the documentation</li>
+            </ol>
+
+            <h2 id="questions">Questions / Concerns:</h2>
+            <p><b>Q:</b> Should we implement the project as multiplayer game?<br><i>A:</i> No, as the professor said during the lecture.</p>
+            <hr>
+            
+            <h2>Whiteboard Diagram:</h2>
+            <img src="assets/images/whiteboardMeetingNote.jpg" alt="Time table for showing availability of group members" width="250">
+
+            <details>
+                <summary>Click to view extra notes</summary>
+                <p>This section contains notes that are optional for now. We will revisit these points next week.</p>
+            </details>
+
+            <h2 id="recording">Meeting Recording:</h2>
+            <video width="480" height="360" controls>
+                <source src="assets/videos/teamintro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio controls>
+                <source src="assets/videos/teamintro.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div>
+                <p>For questions, use the <span>team Slack channel</span>.</p>
+            </div>
+
+            <section id="form">
+                <h2>Feedback Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Meeting Feedback</legend>
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name"><br><br>
+
+                        <label>Rate the meeting:</label><br>
+                        <input type="radio" name="rating" value="perfect"> Perfect
+                        <input type="radio" name="rating" value="notbad"> Not Bad
+                        <input type="radio" name="rating" value="horrible"> Horrible<br><br>
+
+                        <label for="dateInput">Date:</label>
+                        <input type="date" id="dateInput"><br><br>
+
+                        <label for="favTopic">Favorite Topic:</label>
+                        <select id="favTopic">
+                            <option>Design</option>
+                            <option>Code Review</option>
+                            <option>Planning</option>
+                        </select><br><br>
+
+                        <label for="toolInput">Preferred Tool:</label>
+                        <input list="tools" id="toolInput">
+                        <datalist id="tools">
+                            <option value="Slack">
+                            <option value="Zoom">
+                            <option value="Discord">
+                        </datalist><br><br>
+
+                        <label>Would you recommend this format?</label>
+                        <input type="checkbox"> Yes<br><br>
+
+                        <label for="comments">Comments:</label><br>
+                        <textarea id="comments" rows="4" cols="50"></textarea><br><br>
+
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Made by Huei-Guo Chang</p>
+        </footer>
+    </body>
+</html>
