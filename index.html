@@ -7,10 +7,23 @@
         <link rel="icon" href="assets/images/Favicon.png">
         <link rel="stylesheet" href="styles.css">
         <style>
-            /* Make all h1’s uppercase with extra spacing */
-            h1{
-                text-transform: uppercase;
-                letter-spacing: 0.1em;
+            /* Style the attendance heading */
+            #attendence {
+                color: hsl(210, 15%, 25%);
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 0.5rem;
+            }
+
+            /* Give the list some padding and a subtle background */
+            .attendance-list {
+                padding-left: 1rem;
+                background-color: rgba(240, 240, 255, 0.5);
+                border-radius: 0.25rem;
+            }
+
+            /* Space out each attendee line */
+            .attendance-list li {
+                margin: 0.25rem 0;
             }
         </style>
     </head>
@@ -44,16 +57,16 @@
             <input type="date">
 
             <h2 id="attendence">Attendence:</h2>
-            <ul>
-                <li><input type="checkbox"> Huei-Guo</li>
-                <li><input type="checkbox"> Aaron</li>
-                <li><input type="checkbox"> Yangyang</li>
-                <li><input type="checkbox"> Cilin</li>
-                <li><input type="checkbox"> Sree</li>
-                <li><input type="checkbox"> Natalie</li>
-                <li><input type="checkbox"> Kelsie</li>
-                <li><input type="checkbox"> Jon</li>
-                <li><input type="checkbox"> Danny</li>
+            <ul class="attendance-list" style="padding-right: 1rem;">
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Huei-Guo</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Aaron</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Yangyang</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Yilin</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Sree</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Natalie</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Kelsie</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Gon</li>
+                <li><input type="checkbox" style="accent-color: hsl(120, 60%, 50%);"> Danny</li>
             </ul>
 
             <h2 id="agenda">Agenda: </h2>
