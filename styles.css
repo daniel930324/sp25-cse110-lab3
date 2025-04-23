@@ -1,0 +1,13 @@
+/* Base page reset */
+body {
+    margin: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Example styling: make your header stand out */
+header div {
+    font-size: 1.25rem;
+    color: #2a2a72;
+    margin-bottom: 0.5rem;
+}
