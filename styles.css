@@ -191,3 +191,72 @@ button:active {
         justify-content: space-around; /* tighter spacing */
     }
 }
+
+/* selectors */
+/* Element selector */
+footer {
+    font-style: italic;
+}
+  
+/* Class selector */
+.attendance-list {
+    /* already exists */
+}
+  
+/* ID selector */
+#attendence {
+    /* already exists */
+}
+  
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+  
+/* Attribute selector */
+input[type="checkbox"] {
+    accent-color: var(--primary-color);
+}
+  
+/* Pseudo-class selector */
+button:active { /* … */ }
+  
+/* Selector list */
+h2, h3 {
+    margin-top: 2rem;
+}
+  
+/* Descendant combinator */
+nav ol li a {
+    font-weight: bold;
+}
+  
+/* Child combinator */
+nav > ol {
+    border-bottom: 1px solid var(--body-text);
+}
+  
+/* General sibling combinator */
+h2 ~ ul {
+    list-style-type: square;
+}
+  
+/* Adjacent sibling combinator */
+h3 + input {
+    margin-bottom: 1rem;
+}
+
+/* Combining two selectors */
+ol.flex > li.highlighted {
+    background-color: rgba(52,152,219,0.1);
+}
+  
+/* New selector: :has() */
+section:has(input:focus) {
+    outline: 2px solid var(--accent-color, #e74c3c);
+}
+  
+/* Nested selector */
+.grid > li {
+    padding: 0.5rem;
+}
