@@ -153,3 +153,11 @@ button:active {
     gap: 1rem; /* space between items */
     flex-wrap: wrap; /* allow wrapping on narrow screens */
 }
+
+.grid {
+    display: grid;                  
+    grid-template-columns: repeat(3, 1fr); /* three equal columns */
+    grid-auto-rows: auto; /* row height auto */
+    gap: 1rem; /* space between cells */
+    justify-items: start; /* align items at start of each cell */
+}
