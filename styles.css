@@ -202,7 +202,10 @@ footer {
   
 /* Class selector */
 .attendance-list {
-    /* already exists */
+    /* Wider-gamut color mix for attendance list background */
+    background-color: color-mix(in srgb, var(--primary-color) 60%, hsl(210, 15%, 25%) 40%);
+    padding-left: 1rem;
+    border-radius: 0.25rem;
 }
   
 /* ID selector */
