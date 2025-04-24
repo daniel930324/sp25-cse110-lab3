@@ -1,13 +1,45 @@
+/* variables */
+:root {
+    --primary-color: #3498db;
+    --accent-color: ;
+    --body-text: rgb(34, 34, 34); /* rgb */
+    --body-bg: hsl(210, 20%, 95%); /* hsl */
+}
+
 /* Base page reset */
 body {
     margin: 1rem;
     font-family: Arial, sans-serif;
     line-height: 1.5;
+    color: var(--body-text);
+    background-color: var(--body-bg);
 }
 
-/* Example styling: make your header stand out */
+a {
+    color: #FF5722; /* hex */
+}
+
+h2 {
+    color: orange; /* named color */
+}
+
+/* Header */
 header div {
     font-size: 1.25rem;
     color: #2a2a72;
     margin-bottom: 0.5rem;
+}
+
+/* 3 relative, 3 absolute */
+.text-container {
+    margin: 1rem;    /* relative: rem */
+    padding: 5%;     /* relative: % */
+    font-size: 1.2em; /* relative: em */
+    border-width: 2px; /* absolute: px */
+    width: 5in;       /* absolute: in */
+    height: 3cm;      /* absolute: cm */
+}
+
+#title {
+    color: var(--accent-color, #e74c3c);
 }
