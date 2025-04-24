@@ -85,3 +85,29 @@ header div {
     padding: 0.5rem;
     background-color: rgba(52, 152, 219, 0.2);
 }
+
+/* sizing */
+.sizing {
+    width: 60%; /* relative sizing */
+    min-width: 200px; /* min-width */
+    max-width: 500px; /* max-width */
+    height: auto; /* height */
+    border: 2px solid var(--primary-color);
+    margin: 1rem auto; /* center it */
+}
+
+/* Relative positioning: moves element relative to its normal flow */
+.position-relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+/* Sticky nav: sticks to top as you scroll */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--body-bg);
+    padding: 0.5rem 0;
+    z-index: 10;
+}
