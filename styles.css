@@ -1,7 +1,6 @@
 /* variables */
 :root {
     --primary-color: #3498db;
-    --accent-color: ;
     --body-text: rgb(34, 34, 34); /* rgb */
     --body-bg: hsl(210, 20%, 95%); /* hsl */
 }
@@ -73,6 +72,9 @@ header div {
     color: var(--primary-color);
     text-decoration: underline; /* underlined text */
     text-align: center; /* centered text */
+    list-style-position: inside;
+    margin: 1rem auto;        
+    max-width: 400px; 
 }
 
 /* display */
@@ -110,4 +112,35 @@ header div {
     background-color: var(--body-bg);
     padding: 0.5rem 0;
     z-index: 10;
+    list-style-position: inside;
+    margin: 1rem 0;
+    padding-left: 0;
+    text-align: left;
+    max-width: 400px;
+}
+
+.sticky-nav li a {
+    color: var(--primary-color); 
+    text-decoration: underline;
+    display: inline-block; 
+    padding: 0.25rem 0;
+}
+
+/* pseudo-classes */
+
+.sticky-nav li a:hover {
+    color: var(--accent-color, #e74c3c); 
+    text-decoration: none;
+}
+
+/* Button hover: accent background */
+button:hover {
+    background-color: var(--accent-color, #e74c3c);
+    cursor: pointer;
+}
+  
+/* Button active: subtle press effect */
+button:active {
+    transform: scale(0.97);
+    transition: transform 0.1s ease;
 }
