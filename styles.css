@@ -144,3 +144,12 @@ button:active {
     transform: scale(0.97);
     transition: transform 0.1s ease;
 }
+
+/* flexbox layout */
+.flex {
+    display: flex; /* establish flex container */
+    justify-content: space-between; /* distribute children evenly */
+    align-items: center; /* vertically center items */
+    gap: 1rem; /* space between items */
+    flex-wrap: wrap; /* allow wrapping on narrow screens */
+}
