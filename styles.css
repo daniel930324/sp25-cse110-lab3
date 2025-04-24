@@ -32,14 +32,38 @@ header div {
 
 /* 3 relative, 3 absolute */
 .text-container {
-    margin: 1rem;    /* relative: rem */
-    padding: 5%;     /* relative: % */
+    margin: 1rem; /* relative: rem */
+    padding: 5%; /* relative: % */
     font-size: 1.2em; /* relative: em */
     border-width: 2px; /* absolute: px */
-    width: 5in;       /* absolute: in */
-    height: 3cm;      /* absolute: cm */
+    width: 5in; /* absolute: in */
+    height: 3cm; /* absolute: cm */
 }
 
 #title {
     color: var(--accent-color, #e74c3c);
+}
+
+/* Box Model: longhand & shorthand for margin, padding, border */
+.box-model {
+    /* margin */
+    margin-top: 0.5rem; /* longhand */
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 0.5rem auto; /* auto margin */
+
+    /* padding */
+    padding-top: 0.5rem; /* longhand */
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding: 2rem; /* shorthand */
+
+    /* border */
+    border-width: 2px; /* longhand */
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-radius: 0.25rem;
+    border: 3px dashed var(--accent-color, #e74c3c); /* shorthand */
 }
