@@ -67,3 +67,21 @@ header div {
     border-radius: 0.25rem;
     border: 3px dashed var(--accent-color, #e74c3c); /* shorthand */
 }
+
+/* text styles*/
+.text-styles {
+    color: var(--primary-color);
+    text-decoration: underline; /* underlined text */
+    text-align: center; /* centered text */
+}
+
+/* display */
+.display-none {
+    display: none; /* hidden */
+}
+
+.display-inline-block {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: rgba(52, 152, 219, 0.2);
+}
