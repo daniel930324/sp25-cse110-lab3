@@ -161,3 +161,33 @@ button:active {
     gap: 1rem; /* space between cells */
     justify-items: start; /* align items at start of each cell */
 }
+
+/* responsive */
+
+/* Small phones: single-column grid, stacked flex, tighter margins */
+@media (max-width: 600px) {
+    body {
+      margin: 0.5rem;
+      font-size: 0.9rem; /* slightly smaller text */
+    }
+  
+    .grid {
+      grid-template-columns: 1fr; /* one column instead of three */
+    }
+  
+    .flex {
+      flex-direction: column; /* stack items vertically */
+      gap: 0.5rem;
+    }
+}
+  
+/* Tablets / small laptops: two-column grid */
+@media (min-width: 601px) and (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex {
+        justify-content: space-around; /* tighter spacing */
+    }
+}
